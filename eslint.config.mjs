@@ -7,6 +7,7 @@ import eslintPluginPrettier from "eslint-plugin-prettier";
 
 export default defineConfig([
 	{
+		ignores: ["dist/", "node_modules/", "coverage/"],
 		files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
 		plugins: {
 			js,
